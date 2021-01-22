@@ -1,0 +1,22 @@
+.tabs{
+    @include grid(3, 1rem);
+    button{
+        background-color: transparent;
+        padding: 1rem;
+        font-weight: $bold;
+        font-size: 1.4rem;
+        border: 1px solid $gris;
+        color: $blanco;
+        text-align: center;
+        text-transform: uppercase;
+        transition: background-color .3s ease;
+        &:hover{
+            cursor: pointer;
+            background-color: lighten($azul,10%);
+            border: none;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+}
